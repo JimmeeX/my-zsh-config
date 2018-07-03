@@ -68,6 +68,7 @@ POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
 POWERLEVEL9K_TIME_FOREGROUND="black"
 POWERLEVEL9K_TIME_BACKGROUND="white"
 
+
 alias python3='/usr/bin/python3.6' 
 alias java='/mnt/c/ProgramData/Oracle/Java/javapath_target_450525031/java.exe'
 alias javac='/mnt/c/Program Files/Java/jdk1.8.0_161/bin/javac.exe'
@@ -124,6 +125,26 @@ alias javac='/mnt/c/Program Files/Java/jdk1.8.0_161/bin/javac.exe'
 plugins=(git sublime command-not-found zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+
+# ZSH SYNTAX HIGHLIGHTING CUSTOMISATIONS
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+
+# # CURSOR
+# ZSH_HIGHLIGHT_STYLES[cursor]='bg=blue,bold'
+
+# MAIN
+ZSH_HIGHLIGHT_STYLES[alias]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[function]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[command]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[path]='fg=red,bold'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=white,bold'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=white,bold'
+
+
 
 # User configuration
 
